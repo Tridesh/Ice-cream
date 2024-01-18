@@ -1,0 +1,28 @@
+body {
+    background-image: url("gradient.jpg");
+    background-size: cover;
+}
+@font-face {
+    font-family: "font";
+    src: url("font.otf");
+}
+h1 {
+    font-family: font;
+    text-align: center;
+    padding-top: 15%;
+    position: relative;
+    top: 20%;
+}
+button {
+    position: relative;
+    font-family: font;
+    width: 70px;
+    height: 7%;
+    left: 30%;
+    top: 25%;
+    font-size: 20px;
+    background-color: black;
+    color: aliceblue;
+    border-color: black;
+    border-radius: 10px;
+}
