@@ -2,9 +2,13 @@ const noButton = document.querySelector(".no");
 const textchange = document.querySelector(".change");
 const yesButton = document.querySelector(".yes");
 function moveButton() {
-    ranPositionLeft = Math.random() * 50 + 15;
-    ranPositionTop = Math.random() * 50 + 15;
-    if (ranPositionLeft == yesButton.style.left && ranPosition == yesButton.style.Top){
+    var ranNum = Math.random();
+    if (ranNum < 0.5) {
+        ranNum = Math.random();
+    }
+    ranPositionLeft = ranNum * 50;
+    ranPositionTop = ranNum * 50;
+    if (ranPositionLeft == (yesButton.style.left + 5) && ranPosition == (yesButton.style.Top + 5)){
         ranPositionLeft = Math.random() * 50 + 15;
         ranPositionTop = Math.random() * 50 + 15;
     }
