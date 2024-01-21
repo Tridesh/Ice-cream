@@ -4,6 +4,10 @@ const yesButton = document.querySelector(".yes");
 function moveButton() {
     ranPositionLeft = Math.random() * 50 + 15;
     ranPositionTop = Math.random() * 50 + 15;
+    if (ranPositionLeft == yesButton.style.left && ranPosition == yesButton.style.Top){
+        ranPositionLeft = Math.random() * 50 + 15;
+        ranPositionTop = Math.random() * 50 + 15;
+    }
     noButton.style.left = ranPositionLeft + "%";
     noButton.style.top = ranPositionTop + "%";
 }
