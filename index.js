@@ -2,8 +2,8 @@ const noButton = document.querySelector(".no");
 const textchange = document.querySelector(".change");
 const yesButton = document.querySelector(".yes");
 function moveButton() {
-    ranPositionLeft = Math.random() * 50 + 5;
-    ranPositionTop = Math.random() * 50 + 5;
+    ranPositionLeft = Math.random() * 50 + 15;
+    ranPositionTop = Math.random() * 50 + 15;
     noButton.style.left = ranPositionLeft + "%";
     noButton.style.top = ranPositionTop + "%";
 }
