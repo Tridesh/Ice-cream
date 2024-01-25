@@ -7,7 +7,7 @@ function moveButton() {
         ranNum = Math.random();
     }
     ranPositionLeft = ranNum * 80;
-    ranPositionTop = ranNum * 80;
+    ranPositionTop = (Math.random() + 1) * 80;
     if (ranPositionLeft == (yesButton.style.left + 5) && ranPosition == (yesButton.style.Top + 5)){
         ranPositionLeft = Math.random() * 80+ 15;
         ranPositionTop = Math.random() * 80 + 15;
