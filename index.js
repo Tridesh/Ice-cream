@@ -6,11 +6,11 @@ function moveButton() {
     if (ranNum < 0.5) {
         ranNum = Math.random();
     }
-    ranPositionLeft = ranNum * 50;
-    ranPositionTop = ranNum * 50;
+    ranPositionLeft = ranNum * 80;
+    ranPositionTop = ranNum * 80;
     if (ranPositionLeft == (yesButton.style.left + 5) && ranPosition == (yesButton.style.Top + 5)){
-        ranPositionLeft = Math.random() * 50 + 15;
-        ranPositionTop = Math.random() * 50 + 15;
+        ranPositionLeft = Math.random() * 80+ 15;
+        ranPositionTop = Math.random() * 80 + 15;
     }
     noButton.style.left = ranPositionLeft + "%";
     noButton.style.top = ranPositionTop + "%";
